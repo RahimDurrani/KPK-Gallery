@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.image{ 
+  display: flex;
+ width: 100%;
+}
+.image img{
+    width: 100%;
+}
+.discription{
+    margin-top: 30px;
+    padding: 50px;
+    border: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 7px rgb(99, 97, 97);
+    width: 900px;
+    justify-self: center;
+}
+.discription h1{
+    text-align: center;
+}
+.discription p{
+    padding: 20px;
+}
+.details{
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+}
+ul{
+    list-style: none;
+}
+li{
+    padding: 10px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+   justify-self: center;
+
+}
+
+.btn1{
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  width: 350px;
+}
+.btn1 {
+  background: linear-gradient(to right, #00aaff, #0077ff);
+  color: white;
+  border-radius: 4px;
+}
+.btn1:hover {
+  background: linear-gradient(to right, #0077ff, #0055cc);
+}
+
+.btn2{
+  width: 60px;
+  height: 60px;
+  border-radius:50% ;
+}
+
+
+    .form-data {
+  display: none;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.515);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+.cls-form {
+  margin: 15px 0;
+  padding: 10px ;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(images/Naran.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
+}
+.f-input {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  /* padding: 10px; */
+  width: 550px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.f-input select{
+   /* padding: 0px 8px; */
+  height: 50px;
+  border-radius: 5px;
+}
+
+
+.f-input input {
+  padding: 12px 8px;
+  border-radius: 5px;
+}
+
+.f-input label{
+  margin: 8px 0;
+  color: #f7f8fa;
+}
+.fo-btns {
+  padding: 20px;
+  gap: 10px;
+  align-self: center;
+}
+.fo-bt {
+  background-color: rgb(90, 92, 228);
+  height: 50px;
+  width: 400px;
+  border: 0px;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+}
+
+.close{
+  display: flex;
+  flex-direction: row-reverse;
+ padding: 40px 40px;
+
+}
+.close .fo-bt1 {
+  background-color: rgb(219, 42, 42);
+  height: 50px;
+  width: 50px;
+  border: 0px;
+  border-radius: 50%;
+  cursor: pointer;
+
+}
