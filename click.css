@@ -83,18 +83,20 @@ body{
     border: 0px;
     border-radius: 15px;
     box-shadow: 0px 4px 7px rgb(99, 97, 97);
-    width: 900px;
+    width: 100%;
     justify-self: center;
 }
 
 .discription p{
     padding: 20px;
+    display: flex;
 }
 .details{
     text-align: center;
     gap: 10px;
     padding: 20px;
 }
+
 ul{
     list-style: none;
 }
@@ -134,7 +136,7 @@ li{
 .gallery{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  padding: 10px 0px ;
+  padding: -10px 0px ;
   gap: 20px;
   width: 100%;
 }
@@ -265,13 +267,19 @@ li{
       width:300px ;
       height: auto;
       text-align: center;
+      margin-bottom: 100px;
+      display: flex;
+      flex-direction: column-reverse;
   }
   .discription p{
-    line-height: 1.3rem;
+    line-height: 0.9rem;
     font-size: small;
   }
   .btn1{
     width: 130px;
+    justify-self: center;
+    align-self: center;
+    margin-left: 40px;
   }
  .main-cls{
   height: 200px;
@@ -295,5 +303,13 @@ li{
 }
 .fo-bt{
   width: 100px;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+}
+.gallery img{
+  width: 300px;
 }
 }

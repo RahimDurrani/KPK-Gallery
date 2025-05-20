@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
      scroll-behavior: smooth;
+
 }
 body{
   font-family: 'Times New Roman', Times, serif;
@@ -244,7 +245,7 @@ body{
 .close{
   display: flex;
   flex-direction: row-reverse;
- padding: 0 40px;
+ padding: 15px 40px;
 
  }
 
@@ -315,14 +316,15 @@ body{
   text-align: left;
 } 
 
-.mian-contact{
+.main-contact{
   align-self: center;
   display: flex;
   height: auto;
   text-align: center;
   width: 100%;
   padding: 30px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  background-color: #3333337a;
 }
 .contact{
     padding: 60px 0px;
@@ -330,10 +332,12 @@ body{
   border: 0px;
   /* border-radius: 15px; */
   text-align: center;
-  /* color: #ffffff; */
+  color: #ffffff;
   background-color: #69778677;
   width: 100%;
   justify-self: center;
+  border-radius: 15px;
+  border: 5px solid white;
 }
 
 .contact textarea{
@@ -467,6 +471,7 @@ display: flex;
 .footer-links,
 .footer-contact {
   min-width: 200px;
+
 }
 
 .footer-links h3,
