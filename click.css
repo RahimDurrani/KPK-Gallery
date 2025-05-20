@@ -7,12 +7,75 @@ body{
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: relative;
+  color: rgb(163, 105, 105);
+    position: sticky;
+}
+
+
+.nav-link a{
+  color:rgb(163, 105, 105);
+  text-decoration: none;
+ }
+  .nav-link a:hover{
+  color: #0077ff
+ }
+.logo h1 {
+  width: 50px;
+
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.btn1{
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+.btn1 {
+  background: linear-gradient(to right, #00aaff, #0077ff);
+  color: white;
+  border-radius: 4px;
+}
+.btn1:hover {
+  background: linear-gradient(to right, #0077ff, #0055cc);
+}
+
 .image{ 
   display: flex;
+  position: relative;
  width: 100%;
 }
 .image img{
     width: 100%;
+}
+.image h1{
+   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
 }
 .discription{
     margin-top: 30px;
@@ -23,9 +86,7 @@ body{
     width: 900px;
     justify-self: center;
 }
-.discription h1{
-    text-align: center;
-}
+
 .discription p{
     padding: 20px;
 }
@@ -94,10 +155,7 @@ li{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(images/Naran.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
 
   
 }
@@ -125,7 +183,7 @@ li{
 
 .f-input label{
   margin: 8px 0;
-  color: #f7f8fa;
+  color: black;
 }
 .fo-btns {
   padding: 20px;
@@ -156,4 +214,51 @@ li{
   border-radius: 50%;
   cursor: pointer;
 
+}
+@media (max-width: 768px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+  }
+  .image h1{
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    font-size: medium;
+  }
+  .discription{
+      width:300px ;
+      height: auto;
+      text-align: center;
+  }
+  .discription p{
+    line-height: 1.3rem;
+    font-size: small;
+  }
+  .btn1{
+    width: 130px;
+  }
+ .main-cls{
+  height: 200px;
+ }
+ .form-data{
+  height: 100px;
+ 
+ }
+ .f-input{
+  width: 300px;
+ }
+ .close{
+  justify-self: center;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+ }
+.fo-btns{ 
+  justify-self: center;
+  align-self: center;
+}
+.fo-bt{
+  width: 100px;
+}
 }

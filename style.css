@@ -2,12 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+     scroll-behavior: smooth;
 }
 body{
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
 }
 .container {
   background-color: rgba(64, 77, 62, 0.664);
+  position: sticky;
+  overflow: hidden;
+  z-index: 50;
+  top: 0%;
+  width: 100%;
   
 
 }
@@ -18,7 +25,7 @@ body{
   padding: 15px 30px;
   position: relative;
   color: white;
-    position: sticky;
+    
 }
 
 .logo h1 {
@@ -37,6 +44,19 @@ body{
   gap: 20px;
   cursor: pointer;
   list-style: none;
+}
+ .nav-link a{
+  color: white;
+  text-decoration: none;
+ }
+  .nav-link a:hover{
+  color: #0077ff
+ }
+.nav-link li{
+  transition: ease 0.3s;
+}
+.nav-link li:hover{
+  color: #0077ff;
 }
 
 .btns {
@@ -178,11 +198,7 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(images/Naran.jpeg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+ 
   
 }
 .f-input {
@@ -221,7 +237,7 @@ body{
   width: 400px;
   border: 0px;
   cursor: pointer;
-  color: white;
+  color: rgb(0, 0, 0);
   border-radius: 10px;
 }
 
@@ -230,6 +246,147 @@ body{
   flex-direction: row-reverse;
  padding: 40px 40px;
 
+ }
+
+ .main-about{
+
+ align-self: center;
+  display: flex;
+  height: auto;
+  width: 100%;
+  /* text-align: center; */
+  padding: 20px 20px;
+   background-color: rgba(31, 66, 24, 0.215);
+
+ }
+ .about{
+  padding: 60px 30px;
+ flex-direction: column;
+  border: 0px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 7px rgba(31, 66, 24, 0.463);
+  background-color: rgba(31, 66, 24, 0.463);
+  color: #ffffff;
+  transition: 2s;
+ }
+
+ .about:hover{
+  transform: translate(-0.3rem , -0.3rem);
+  box-shadow: 0px 10px 7px white;
+ }
+ .about h1{
+  text-align: center;
+ }
+
+.about .p{
+  display: flex;
+  text-align: left;
+} 
+
+.mian-contact{
+  align-self: center;
+  display: flex;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+  margin-top: 30px;
+}
+.contact{
+    padding: 60px 0px;
+ flex-direction: column;
+  border: 0px;
+  /* border-radius: 15px; */
+  text-align: center;
+  /* color: #ffffff; */
+  background-color: #69778677;
+  width: 100%;
+  justify-self: center;
+}
+
+.contact textarea{
+  width: 80%;
+  height: 100px;
+  border-radius: 15px;
+  border: 0px;
+  margin-top: 30px;
+}
+
+.msg{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  gap: 10px;
+  padding: 5px;
+  width: 300px;
+}
+.msg input{
+  /* border-style: dashed; */
+  border: 0px;
+  border-radius: 15px ;
+  height: 40px;
+  flex-direction: row-reverse;
+}
+.mian-msg-card{
+display: flex;
+ padding: 30px;
+ flex-direction: row;
+ gap: 30px;
+ justify-self: center;
+}
+
+.msgs{
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  /* padding: 30px */
+}
+.msg-card{
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  width: 300px;
+  height: 250px;
+  border-radius: 15px;
+  
+  /* gap: 20px; */
+  /* padding: 30px; */
+  border: 0px;
+}
+.msg-card i{
+  padding: 20px;
+  font-size: xx-large;
+  color: #fff;
+}
+.msg-card p{
+  color: #2d2c2c88;
+  padding: 20px;
+}
+
+.btn3 button {
+  margin-top: 30px;
+  width: 300px;
+  height: 40px;
+  border-radius: 15px;
+  border: 0px;
+  color: black;
+  cursor: pointer;
+  background: white;
+  transition: 2s;
+}
+.btn3 button:hover{
+  background-color: black;
+  color:white ;
+  transform: translate(-0.3rem ,0.3rem);
+  box-shadow: 0px 4px 7px rgb(97, 215, 101);
+}
+
+.msg-card a{
+  text-decoration-line: none;
+  color: #fff;
+}
+.msg-card a:hover{
+  text-decoration-line: none;
+  color: #fff;
 }
 .close .fo-bt1 {
   background-color: rgb(219, 42, 42);
@@ -240,7 +397,6 @@ body{
   cursor: pointer;
 
 }
-
 
 .footer {
   background-color:#bcb3b3;
@@ -340,4 +496,57 @@ body{
 
 .footer-policy-links a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px){
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+ .main-container{
+  display: flex;
+  flex-direction: column;
+ }
+ .main-content{
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+ }
+
+ .main-cls{
+  height: 200px;
+ }
+ .form-data{
+  height: 100px;
+
+  flex-direction: column;
+ }
+ .f-input{
+  width: 300px;
+ }
+ .close{
+  justify-self: center;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+ }
+
+ .fo-bt{
+  width: 100px;
+}
+
+.mian-msg-card{
+  display: flex;
+  flex-direction: column;
+}
+.msgs{
+  display: flex;
+  flex-direction: column;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+}
 }

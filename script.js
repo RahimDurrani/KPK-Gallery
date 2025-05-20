@@ -9,6 +9,7 @@ cards.forEach((card) => {
   card.addEventListener("click", function() {
     form.style.display = "block"
     body.style.overflow = "hidden"
+
   })
 })
 
