@@ -131,6 +131,41 @@ li{
 }
 
 
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 10px 0px ;
+  gap: 20px;
+  width: 100%;
+}
+
+.gallery img{
+  width: 400px;
+  justify-self: center;
+  padding: 0px;
+  border-radius: 25px;
+  box-shadow: 0px 4px 7px black;
+}
+
+.f-head{
+  display: flex;
+  flex-direction: row;
+}
+
+.f-head .pricing{
+  background-color: #00aaff;
+  width: 190px;
+  border-radius:5px ;
+  height: 25px;
+  text-align: center;
+  margin-left: 70px;
+}
+
+.duration{
+  font-weight: 500;
+  color: rgba(56, 55, 54, 0.496);
+}
+
     .form-data {
   display: none;
   padding: 10px;
